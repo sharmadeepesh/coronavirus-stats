@@ -1,0 +1,93 @@
+{% load static %}
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Coronavirus Statistics 2020</title>
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+	{% include 'navigation.html' %}
+
+	<div class="content">
+		<div class="caption text-center">
+			<h1>Global Statistics</h1>
+		</div>
+		<div class="row details">
+			<div class="col-xl-4 col-sm-6 py-2">
+                    <div class="card bg-success text-white h-100">
+                        <div class="card-body bg-success">
+                            <div class="rotate">
+                                <i class="fa fa-user fa-4x"></i>
+                            </div>
+                            <h6 class="text-uppercase">New Cases</h6>
+                            <h1 class="display-4">{{new_cases}}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-sm-6 py-2">
+                    <div class="card bg-success text-white w-75 h-100">
+                        <div class="card-body bg-success">
+                            <div class="rotate">
+                                <i class="fa fa-user fa-4x"></i>
+                            </div>
+                            <h6 class="text-uppercase">New Death</h6>
+                            <h1 class="display-4">{{new_death}}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-sm-6 py-2">
+                    <div class="card bg-success text-white h-100">
+                        <div class="card-body bg-success">
+                            <div class="rotate">
+                                <i class="fa fa-user fa-4x"></i>
+                            </div>
+                            <h6 class="text-uppercase">New Recovered</h6>
+                            <h1 class="display-4">{{new_recovered}}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-sm-6 py-2">
+                    <div class="card bg-success text-white h-100">
+                        <div class="card-body bg-danger">
+                            <div class="rotate">
+                                <i class="fa fa-user fa-4x"></i>
+                            </div>
+                            <h6 class="text-uppercase">Total Cases</h6>
+                            <h1 class="display-4">{{total_cases}}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-sm-6 py-2">
+                    <div class="card bg-success text-white h-100">
+                        <div class="card-body bg-danger">
+                            <div class="rotate">
+                                <i class="fa fa-user fa-4x"></i>
+                            </div>
+                            <h6 class="text-uppercase">Total Deaths</h6>
+                            <h1 class="display-4">{{total_death}}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-sm-6 py-2">
+                    <div class="card bg-success text-white h-100">
+                        <div class="card-body bg-danger">
+                            <div class="rotate">
+                                <i class="fa fa-user fa-4x"></i>
+                            </div>
+                            <h6 class="text-uppercase">Total Recovered</h6>
+                            <h1 class="display-4">{{total_recovered}}</h1>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+</script>
+
+</body>
+</html>

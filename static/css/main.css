@@ -1,0 +1,76 @@
+body,html {
+	padding:0px;
+	margin: 0px;
+	color:black !important;
+	background-color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.header h1{
+	color:white;
+	font-weight: bolder;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+.sidebar {
+  height: 100%;
+  width: 20%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar a {
+	background-color:#111;
+	margin:5px;
+  	padding: 6px 8px 6px 16px;
+  	text-decoration: none;
+  	font-size: 20px;
+  	color: #818181;
+  	display: block;
+  	text-align: center;
+}
+
+.country-list {
+	list-style-type: none;
+	padding: 0px;
+}
+
+.sidebar a:hover {
+	background-color: #673AB7 !important;
+	box-shadow:0px 0px 10px #673AB7;
+  	color: #f1f1f1;
+}
+
+.content {
+	margin-top: 6.5%;
+	margin-left: 20%;
+  	font-size: 28px;
+  	padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+#myInput {
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+.card {
+	width:75% !important;
+}
+
+.details-country {
+	margin: 20px 20px !important;
+}

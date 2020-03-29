@@ -1,0 +1,46 @@
+{% load static %}
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ country }} Statistics 2020</title>
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+	{% include 'navigation.html' %}
+
+	<div class="content">
+		<div class="caption text-center">
+			<h1>{{country}} Statistics</h1>
+		</div>
+		<div class="row details-country">
+			<div class="col-xl-6 col-sm-6 py-2">
+                    <div class="card bg-success text-white h-75">
+                        <div class="card-body bg-success">
+                            <div class="rotate">
+                                <i class="fa fa-user fa-4x"></i>
+                            </div>
+                            <h6 class="text-uppercase">Total Cases</h6>
+                            <h1 class="display-4">{{total}}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-sm-6 py-2">
+                    <div class="card bg-success text-white h-75">
+                        <div class="card-body bg-danger">
+                            <div class="rotate">
+                                <i class="fa fa-user fa-4x"></i>
+                            </div>
+                            <h6 class="text-uppercase">Total Deaths</h6>
+                            <h1 class="display-4">{{deaths}}</h1>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+
+</body>
+</html>
