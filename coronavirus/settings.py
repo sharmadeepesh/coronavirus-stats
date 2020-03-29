@@ -8,7 +8,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR,'templates/')
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '7wbqa#)!-8ijhba+68r#8tcl+ffw#kb0!+)%8d2x)&xwx2n-!v'
+SECRET_KEY = 'Add your own key bitch'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
